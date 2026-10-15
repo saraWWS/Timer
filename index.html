@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch & Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Stopwatch & Timer</h1>
+
+        <div class="tabs">
+            <button id="stopwatchTab" class="active">Stopwatch</button>
+            <button id="timerTab">Timer</button>
+        </div>
+
+        <section id="stopwatchSection">
+            <div id="stopwatchDisplay" class="display">
+                00:00:00.00
+            </div>
+
+            <div class="controls">
+                <button id="startButton">Start</button>
+                <button id="pauseButton">Pause</button>
+                <button id="resetButton">Reset</button>
+            </div>
+        </section>
+
+        <section id="timerSection" class="hidden">
+            <div class="time-inputs">
+                <label>
+                    Minutes
+                    <input type="number" id="minutesInput"
+                           min="0" max="999" value="1">
+                </label>
+
+                <label>
+                    Seconds
+                    <input type="number" id="secondsInput"
+                           min="0" max="59" value="0">
+                </label>
+            </div>
+
+            <div id="timerDisplay" class="display">
+                01:00
+            </div>
+
+            <div class="controls">
+                <button id="timerStartButton">Start</button>
+                <button id="timerPauseButton">Pause</button>
+                <button id="timerResetButton">Reset</button>
+            </div>
+
+            <p id="timerMessage">Set your time and press Start.</p>
+        </section>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
